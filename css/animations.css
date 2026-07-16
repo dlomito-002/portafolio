@@ -1,0 +1,65 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.hero__greeting,
+.hero__name,
+.hero__role,
+.hero__quote,
+.hero__actions,
+.hero__photo-wrap {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.hero__greeting {
+  animation-delay: 0.1s;
+}
+.hero__name {
+  animation-delay: 0.2s;
+}
+.hero__role {
+  animation-delay: 0.3s;
+}
+.hero__quote {
+  animation-delay: 0.4s;
+}
+.hero__actions {
+  animation-delay: 0.5s;
+}
+.hero__photo-wrap {
+  animation-delay: 0.3s;
+}
+
+.hero__scroll-hint svg {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Scroll reveal genérico (usado en futuras secciones) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
