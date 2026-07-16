@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diego Velásquez · Desarrollador Web</title>
+  <meta name="description" content="Portafolio de Diego Alejandro Velásquez Cuté, estudiante de Perito en Informática y desarrollador web." />
+  <meta name="theme-color" content="#0a0e14" />
+  <meta property="og:title" content="Diego Velásquez · Desarrollador Web" />
+  <meta property="og:description" content="Portafolio de Diego Alejandro Velásquez Cuté, estudiante de Perito en Informática y desarrollador web." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Saltar al contenido principal</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Diego<span>.dev</span></a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list" id="navList">
+          <li><a href="#about" class="nav-link">Sobre mí</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#education" class="nav-link">Educación</a></li>
+          <li><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="hero__bg-glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__greeting">Hola, soy</p>
+          <h1 class="hero__name">Diego Velásquez</h1>
+          <p class="hero__role">Desarrollador Web</p>
+          <p class="hero__quote">"Nadie tiene enemigos."</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contact" class="btn btn-outline">Contáctame</a>
+          </div>
+        </div>
+
+        <div class="hero__photo-wrap">
+          <div class="hero__photo-frame">
+            <img src="assets/img/profile.jpg" alt="Foto de Diego Velásquez" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <p class="section-label reveal">Conóceme</p>
+        <h2 class="section-title reveal">Sobre mí</h2>
+
+        <div class="about__inner">
+          <div class="about__description reveal">
+            <p>
+              Soy desarrollador y me gusta trabajar en equipo para resolver problemas.
+              Dentro del desarrollo web me inclino más hacia el <strong>backend</strong>,
+              donde disfruto pensar en la lógica y el funcionamiento detrás de una
+              aplicación. También me interesa la <strong>ciberseguridad</strong>; es un
+              área que quiero empezar a explorar más a fondo conforme avance en mi
+              formación.
+            </p>
+            <p>
+              Llevo 3 años programando durante mis estudios como Perito en Informática
+              en Fundación Kinal, período en el que he participado en proyectos que
+              simulan entornos de desarrollo colaborativo, aplicando buenas prácticas
+              de trabajo en equipo y organización de código.
+            </p>
+          </div>
+
+          <div class="about__card reveal">
+            <p class="about__card-title">Datos generales</p>
+            <ul class="about__data-list">
+              <li class="about__data-item">
+                <span class="about__data-label">Nombre</span>
+                <span class="about__data-value">Diego Alejandro Velásquez Cuté</span>
+              </li>
+              <li class="about__data-item">
+                <span class="about__data-label">Edad</span>
+                <span class="about__data-value">18 años</span>
+              </li>
+              <li class="about__data-item">
+                <span class="about__data-label">Centro educativo</span>
+                <span class="about__data-value">Fundación Kinal</span>
+              </li>
+              <li class="about__data-item">
+                <span class="about__data-label">Carrera</span>
+                <span class="about__data-value">Perito en Informática</span>
+              </li>
+              <li class="about__data-item">
+                <span class="about__data-label">Experiencia</span>
+                <span class="about__data-value">3 años programando</span>
+              </li>
+              <li class="about__data-item">
+                <span class="about__data-label">Correo</span>
+                <span class="about__data-value"><a href="mailto:davelasquezcute@gmail.com">davelasquezcute@gmail.com</a></span>
+              </li>
+              <li class="about__data-item">
+                <span class="about__data-label">Teléfono</span>
+                <span class="about__data-value">3791-9295</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <p class="section-label reveal">Stack</p>
+        <h2 class="section-title reveal">Habilidades</h2>
+
+        <div class="skills__grid" id="skillsGrid">
+          <article class="skill-card reveal" data-percent="80">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">HTML</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="40">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">CSS</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="80">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">JavaScript</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="75">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">Node.js</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="50">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">React</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="50">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">MongoDB</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="80">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">Git</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="70">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">MySQL</p>
+          </article>
+
+          <article class="skill-card reveal" data-percent="60">
+            <div class="skill-donut">
+              <svg viewBox="0 0 110 110" aria-hidden="true">
+                <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
+                <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
+              </svg>
+              <span class="skill-donut__value">0%</span>
+            </div>
+            <p class="skill-card__name">Java</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <p class="section-label reveal">Trayectoria</p>
+        <h2 class="section-title reveal">Educación y Experiencia</h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <span class="timeline__period">2021 — Actualidad</span>
+            <h3 class="timeline__title">Perito en Informática</h3>
+            <p class="timeline__org">Fundación Kinal</p>
+            <p class="timeline__desc">
+              Actualmente cursando 6to Perito. 3 años de formación en programación
+              como parte de la carrera, desarrollando proyectos que simulan entornos
+              de trabajo colaborativo y arquitecturas de software modernas.
+            </p>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__dot timeline__dot--pending"></span>
+            <span class="timeline__period">Agosto 2026</span>
+            <h3 class="timeline__title">Prácticas profesionales</h3>
+            <p class="timeline__org">Carrusel</p>
+            <p class="timeline__desc">
+              Prácticas planificadas como parte del proceso formativo de Perito en
+              Informática.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <p class="section-label reveal">Portafolio</p>
+        <h2 class="section-title reveal">Proyectos</h2>
+
+        <div class="projects__grid">
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <img src="assets/img/projects/urbus/urbus-01.jpg" alt="Panel de administración de UrBus mostrando mapa en tiempo real" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">UrBus</h3>
+              <p class="project-card__desc">
+                Plataforma de desarrollo colaborativo orientada a la integración de
+                estudiantes en equipos de trabajo organizados por "buses". Simula un
+                entorno profesional donde múltiples grupos trabajan sobre distintos
+                módulos dentro de una arquitectura basada en microservicios, con
+                mapa en tiempo real para seguimiento de rutas.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">ASP.NET Core</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Socket.IO</span>
+              </div>
+              <div class="project-card__footer">
+                <span class="project-card__status">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="5" y="11" width="14" height="9" rx="1"></rect>
+                    <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                  </svg>
+                  Repositorio privado
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <img src="assets/img/projects/paysmart/paysmart-01.jpg" alt="Panel de administración de PaySmart con estadísticas de cuentas" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">PaySmart</h3>
+              <p class="project-card__desc">
+                Sistema de pagos basado en arquitectura de microservicios,
+                desarrollado como aplicación móvil con panel de administración
+                para gestión de cuentas, transacciones y reportes de movimientos.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Expo</span>
+                <span class="tag">Zustand</span>
+                <span class="tag">React Hook Form</span>
+                <span class="tag">Axios</span>
+              </div>
+              <div class="project-card__footer">
+                <span class="project-card__status">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="5" y="11" width="14" height="9" rx="1"></rect>
+                    <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                  </svg>
+                  Repositorio privado
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <img src="assets/img/projects/foodline/foodline-01.jpeg" alt="Panel de administración de FoodLine mostrando menú de restaurante" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">FoodLine</h3>
+              <p class="project-card__desc">
+                Sistema de gestión de restaurantes con panel de administración
+                para manejar menú, órdenes, reservaciones y eventos, con una
+                interfaz moderna orientada a la experiencia del usuario.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">React 19</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Zustand</span>
+                <span class="tag">Framer Motion</span>
+              </div>
+              <div class="project-card__footer">
+                <span class="project-card__status">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="5" y="11" width="14" height="9" rx="1"></rect>
+                    <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                  </svg>
+                  Repositorio privado
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <p class="section-label reveal">Hablemos</p>
+        <h2 class="section-title reveal">Contacto</h2>
+
+        <div class="contact__inner">
+          <div class="contact__intro reveal">
+            <p>
+              Estoy abierto a oportunidades de prácticas y proyectos donde pueda
+              seguir aprendiendo. Si quieres platicar sobre una oportunidad o
+              simplemente contactarme, aquí tienes mis datos.
+            </p>
+
+            <div class="contact__links">
+              <a class="contact__link" href="mailto:davelasquezcute@gmail.com">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="m3 7 9 6 9-6"></path>
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__link-label">Correo</span><br />
+                  <span class="contact__link-value">davelasquezcute@gmail.com</span>
+                </span>
+              </a>
+
+              <a class="contact__link" href="tel:+50237919295">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__link-label">Teléfono</span><br />
+                  <span class="contact__link-value">3791-9295</span>
+                </span>
+              </a>
+
+              <a class="contact__link" href="https://www.linkedin.com/in/diego-vel%C3%A1squez-943224422/" target="_blank" rel="noopener noreferrer">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__link-label">LinkedIn</span><br />
+                  <span class="contact__link-value">Diego Velásquez</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group" id="nameGroup">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" aria-required="true" aria-describedby="nameError" />
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="emailGroup">
+              <label for="email">Correo</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" aria-required="true" aria-describedby="emailError" />
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="messageGroup">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Cuéntame en qué puedo ayudarte" aria-required="true" aria-describedby="messageError"></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite">
+              Mensaje listo. Este formulario es una demostración de interfaz y
+              todavía no envía datos reales — escríbeme directamente al correo
+              mientras se conecta un servicio de envío.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Diego Velásquez. Todos los derechos reservados.</p>
+      <p class="text-secondary">Hecho con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/scrollReveal.js" defer></script>
+  <script src="js/skillsChart.js" defer></script>
+  <script src="js/contactForm.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
