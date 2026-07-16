@@ -478,18 +478,25 @@
   padding-top: var(--space-xs);
 }
 
-.project-card__status {
+.project-card__link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   font-size: 0.75rem;
-  color: var(--warning);
+  color: var(--text-secondary);
   font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.project-card__status svg {
-  width: 14px;
-  height: 14px;
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  color: var(--accent-primary);
+}
+
+.project-card__link svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* Contact */
