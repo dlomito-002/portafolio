@@ -1,9 +1,40 @@
 body {
   font-family: var(--font-main);
   background-color: var(--bg-primary);
+  background-image: radial-gradient(
+      ellipse 900px 600px at 12% -10%,
+      rgba(0, 217, 255, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 700px 500px at 92% 10%,
+      rgba(0, 144, 184, 0.08),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 800px 600px at 50% 100%,
+      rgba(0, 217, 255, 0.05),
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
   font-size: var(--fs-body);
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(
+    rgba(230, 237, 243, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+  pointer-events: none;
 }
 
 .container {

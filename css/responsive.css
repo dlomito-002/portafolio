@@ -76,8 +76,4 @@
   .projects__grid {
     grid-template-columns: 1fr;
   }
-
-  .contact__inner {
-    grid-template-columns: 1fr;
-  }
 }
