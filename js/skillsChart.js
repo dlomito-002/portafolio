@@ -21,16 +21,28 @@ const SkillsChart = (() => {
     requestAnimationFrame(tick);
   };
 
+  const resetCard = (card) => {
+    const progressCircle = card.querySelector(".skill-donut__progress");
+    const valueLabel = card.querySelector(".skill-donut__value");
+    progressCircle.style.transition = "none";
+    progressCircle.style.strokeDashoffset = CIRCUMFERENCE;
+    valueLabel.textContent = "0%";
+    requestAnimationFrame(() => {
+      progressCircle.style.transition = "";
+    });
+  };
+
   const init = () => {
     const cards = document.querySelectorAll(".skill-card");
     if (!cards.length) return;
 
     const observer = new IntersectionObserver(
-      (entries, obs) => {
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             animateCard(entry.target);
-            obs.unobserve(entry.target);
+          } else {
+            resetCard(entry.target);
           }
         });
       },
@@ -42,3 +54,4 @@ const SkillsChart = (() => {
 
   return { init };
 })();
+
