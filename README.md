@@ -8,10 +8,10 @@ Portafolio personal de desarrollador, construido con HTML5, CSS3 y JavaScript pu
 
 - Hero con presentación y frase personal
 - Sobre mí (descripción, enfoque backend, interés en ciberseguridad)
-- Habilidades con gráficas SVG animadas (HTML, CSS, JavaScript, Node.js, React, MongoDB, Git, MySQL, Java)
-- Educación y experiencia (timeline)
-- Proyectos: UrBus, PaySmart, FoodLine
-- Contacto (email, teléfono, LinkedIn, formulario)
+- Habilidades por nivel (Frontend, Backend, Herramientas) y habilidades blandas
+- Educación y experiencia (timeline) y descarga de CV
+- Proyectos: UrBus, PaySmart, FoodLine, Luma, Helpdesk y Carrousel cumpleaños
+- Contacto (email, teléfono, GitHub, LinkedIn)
 
 ## Stack
 
@@ -21,7 +21,7 @@ Portafolio personal de desarrollador, construido con HTML5, CSS3 y JavaScript pu
 ## Estructura
 
 ```
-portafolio-diego/
+portafolio/
 ├── index.html
 ├── css/
 │   ├── reset.css
@@ -35,9 +35,11 @@ portafolio-diego/
 │   ├── main.js
 │   ├── navigation.js
 │   ├── scrollReveal.js
-│   ├── skillsChart.js
-│   └── contactForm.js
+│   ├── projectCarousel.js
+│   ├── i18n.js
+│   └── translations.js
 └── assets/
+    ├── docs/   (CV en PDF)
     └── img/
 ```
 
