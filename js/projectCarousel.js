@@ -1,6 +1,7 @@
 const ProjectCarousel = (() => {
   let openGallery = [];
   let openIndex = 0;
+  let lastFocused = null;
 
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
@@ -51,15 +52,33 @@ const ProjectCarousel = (() => {
     openGallery = slides.map((slide) => slide.querySelector("img"));
     openIndex = index;
     renderLightbox();
+    lastFocused = document.activeElement;
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+    lightboxClose.focus();
   };
 
   const close = () => {
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    if (lastFocused) lastFocused.focus();
+  };
+
+  const trapFocus = (e) => {
+    const focusable = Array.from(lightbox.querySelectorAll("button")).filter(
+      (btn) => btn.style.display !== "none"
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   };
 
   const step = (delta) => {
@@ -81,6 +100,7 @@ const ProjectCarousel = (() => {
       if (e.key === "Escape") close();
       if (e.key === "ArrowLeft") step(-1);
       if (e.key === "ArrowRight") step(1);
+      if (e.key === "Tab") trapFocus(e);
     });
   };
 
