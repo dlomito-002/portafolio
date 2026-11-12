@@ -99,8 +99,12 @@ const Translations = {
     project_luma_alt: "Panel de resumen de Luma mostrando estadísticas de tareas",
     project_luma_desc:
       "Sistema gestor de tareas desarrollado en un solo día con apoyo de IA. Incluye tareas, nivel de urgencia, descripción, fechas y dashboard.",
+    project_helpdesk_alt:
+      "Panel de Control de Vehículos con recepciones abiertas y devoluciones recientes",
     project_helpdesk_desc:
       "Aplicación para resolver el control de fechas de los vehículos de la empresa: registra el estado del vehículo antes del uso y en la devolución, tiene un apartado de mantenimiento con kilometraje para sus servicios y un calendario con el uso planificado. Desarrollada con asistencia de IA (Claude Code).",
+    project_carrousel_alt:
+      "Pantalla de inicio de Carrousel Campañas con accesos para ingresar cliente y canjear cupón",
     project_carrousel_desc:
       "Aplicación web que genera una base de datos de clientes y permite crear campañas que envían correos electrónicos a esa base. Incluye una base de cupones que se generan y se editan desde la misma app. Desarrollada con asistencia de IA (Claude Code).",
     contact_label: "Hablemos",
@@ -211,8 +215,10 @@ const Translations = {
     project_luma_alt: "Luma summary panel showing task statistics",
     project_luma_desc:
       "Task management system built in a single day with AI assistance. Includes tasks, urgency level, description, dates, and a dashboard.",
+    project_helpdesk_alt: "Vehicle Control dashboard showing open receptions and recent returns",
     project_helpdesk_desc:
       "App that solves date control for company vehicles: it records the vehicle's condition before use and on return, has a maintenance section with mileage for services, and a calendar showing planned usage. Built with AI assistance (Claude Code).",
+    project_carrousel_alt: "Carrousel Campaigns home screen with shortcuts to add a customer and redeem a coupon",
     project_carrousel_desc:
       "Web app that generates a customer database and lets you create campaigns that send emails to that database. It includes a coupon database where coupons are generated and edited from the same app. Built with AI assistance (Claude Code).",
     contact_label: "Let's talk",

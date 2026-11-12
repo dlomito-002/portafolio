@@ -29,7 +29,7 @@ El contenido visible está en español **dentro del HTML** y se sobrescribe con 
 ## Convenciones del contenido
 
 - Las habilidades técnicas se muestran por nivel (`data-level="1|2|3"` → Básico/Intermedio/Avanzado), no por porcentaje.
-- Cada tarjeta de proyecto lleva tipo, rol, descripción, etiquetas de tecnología verificadas contra su repositorio y enlace a GitHub. Las capturas van en `assets/img/projects/<proyecto>/<proyecto>-NN.jpg` (~900px de ancho), con `width`/`height` y `loading="lazy"`; Helpdesk y Carrousel cumpleaños aún no tienen.
+- Cada tarjeta de proyecto lleva tipo, rol, descripción, etiquetas de tecnología verificadas contra su repositorio y enlace a GitHub. Las capturas van en `assets/img/projects/<proyecto>/<proyecto>-NN.jpg` (~900px de ancho), con `width`/`height` y `loading="lazy"`.
 - Los `.reveal` se animan una sola vez con `IntersectionObserver` (`scrollReveal.js`).
 - El CV descargable está en `assets/docs/CV-Diego-Velasquez.pdf` y no debe incluir dirección de domicilio.
 - Faltan `og:image` y `canonical` hasta tener la URL pública del sitio.
