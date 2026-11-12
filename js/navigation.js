@@ -4,11 +4,14 @@ const Navigation = (() => {
   const navList = document.getElementById("navList");
   const navLinks = document.querySelectorAll(".nav-link");
 
-  const closeMenu = () => {
-    navList.classList.remove("is-open");
-    navToggle.classList.remove("is-active");
-    navToggle.setAttribute("aria-expanded", "false");
+  const setMenuState = (isOpen) => {
+    navList.classList.toggle("is-open", isOpen);
+    navToggle.classList.toggle("is-active", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", I18n.t(isOpen ? "nav_close" : "nav_open"));
   };
+
+  const closeMenu = () => setMenuState(false);
 
   const initHeaderScroll = () => {
     const toggleHeaderState = () => {
@@ -19,13 +22,27 @@ const Navigation = (() => {
   };
 
   const initMobileMenu = () => {
-    navToggle.addEventListener("click", () => {
-      const isOpen = navList.classList.toggle("is-open");
-      navToggle.classList.toggle("is-active", isOpen);
-      navToggle.setAttribute("aria-expanded", String(isOpen));
-    });
+    navToggle.addEventListener("click", () =>
+      setMenuState(!navList.classList.contains("is-open"))
+    );
 
     navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navList.classList.contains("is-open")) {
+        closeMenu();
+        navToggle.focus();
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navList.classList.contains("is-open")) return;
+      if (!navList.contains(e.target) && !navToggle.contains(e.target)) closeMenu();
+    });
+
+    document.addEventListener("langchange", () =>
+      setMenuState(navList.classList.contains("is-open"))
+    );
   };
 
   const initActiveLinkOnScroll = () => {

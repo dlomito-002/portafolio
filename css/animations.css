@@ -52,7 +52,7 @@
   animation: bounce 2s ease-in-out infinite;
 }
 
-/* Scroll reveal genérico (usado en futuras secciones) */
+/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(20px);

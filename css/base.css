@@ -82,3 +82,27 @@ h3 {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+.skip-link {
+  position: absolute;
+  top: var(--space-xs);
+  left: var(--space-xs);
+  z-index: 1100;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  transform: translateY(-200%);
+  transition: transform var(--transition-fast);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}

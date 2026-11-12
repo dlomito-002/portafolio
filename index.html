@@ -4,16 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diego Velásquez · Desarrollador Web</title>
-  <meta name="description" content="Portafolio de Diego Alejandro Velásquez Cuté, estudiante de Perito en Informática y desarrollador web." />
+  <meta name="description" content="Portafolio de Diego Alejandro Velásquez Cuté, Perito en Informática y desarrollador web con enfoque en backend." />
+  <meta name="author" content="Diego Alejandro Velásquez Cuté" />
   <meta name="theme-color" content="#0a0e14" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <meta property="og:title" content="Diego Velásquez · Desarrollador Web" />
-  <meta property="og:description" content="Portafolio de Diego Alejandro Velásquez Cuté, estudiante de Perito en Informática y desarrollador web." />
+  <meta property="og:description" content="Portafolio de Diego Alejandro Velásquez Cuté, Perito en Informática y desarrollador web con enfoque en backend." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_GT" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diego Alejandro Velásquez Cuté",
+    "jobTitle": "Desarrollador Web",
+    "birthDate": "2008-02-24",
+    "nationality": "Guatemalteca",
+    "alumniOf": "Colegio Técnico Laboral Kinal",
+    "sameAs": [
+      "https://github.com/dlomito-002",
+      "https://www.linkedin.com/in/diego-vel%C3%A1squez-943224422/"
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -24,7 +42,7 @@
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
-  <a href="#main" class="visually-hidden" data-i18n="skip">Saltar al contenido principal</a>
+  <a href="#main" class="skip-link" data-i18n="skip">Saltar al contenido principal</a>
 
   <header class="header" id="header">
     <div class="container header__inner">
@@ -42,7 +60,7 @@
 
       <button class="lang-toggle" id="langToggle" type="button" data-i18n-attr="aria-label:lang_toggle_label">EN</button>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">
+      <button class="nav-toggle" id="navToggle" data-i18n-attr="aria-label:nav_open" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -60,12 +78,13 @@
           <div class="hero__actions">
             <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">Ver proyectos</a>
             <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Contáctame</a>
+            <a href="assets/docs/CV-Diego-Velasquez.pdf" class="btn btn-outline" download data-i18n="hero_cta_cv">Descargar CV</a>
           </div>
         </div>
 
         <div class="hero__photo-wrap">
           <div class="hero__photo-frame">
-            <img src="assets/img/profile.jpg" alt="Foto de Diego Velásquez" data-i18n-attr="alt:hero_photo_alt" />
+            <img src="assets/img/profile.jpg" alt="Foto de Diego Velásquez" width="700" height="933" data-i18n-attr="alt:hero_photo_alt" />
           </div>
         </div>
       </div>
@@ -110,11 +129,11 @@
               </li>
               <li class="about__data-item">
                 <span class="about__data-label" data-i18n="about_data_age_label">Edad</span>
-                <span class="about__data-value" data-i18n="about_data_age_value">18 años</span>
+                <span class="about__data-value" data-birthdate="2008-02-24" data-i18n="about_data_age_value">18 años</span>
               </li>
               <li class="about__data-item">
                 <span class="about__data-label" data-i18n="about_data_school_label">Centro educativo</span>
-                <span class="about__data-value">Fundación Kinal</span>
+                <span class="about__data-value">Colegio Técnico Laboral Kinal</span>
               </li>
               <li class="about__data-item">
                 <span class="about__data-label" data-i18n="about_data_career_label">Carrera</span>
@@ -146,198 +165,124 @@
         <div class="skills__categories" id="skillsGrid">
           <div class="skills__category">
             <h3 class="skills__category-title reveal" data-i18n="skills_cat_frontend">Frontend</h3>
-            <div class="skills__grid">
-              <article class="skill-card reveal" data-percent="80">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">HTML</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="40">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">CSS</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="80">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">JavaScript</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="50">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">React</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="30">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">TypeScript</p>
-              </article>
-            </div>
+            <ul class="skills__list">
+              <li class="skill-item reveal">
+                <span class="skill-item__name">HTML</span>
+                <span class="skill-item__level" data-level="3">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_high">Avanzado</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">CSS</span>
+                <span class="skill-item__level" data-level="1">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_basic">Básico</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">JavaScript</span>
+                <span class="skill-item__level" data-level="3">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_high">Avanzado</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">React</span>
+                <span class="skill-item__level" data-level="2">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_mid">Intermedio</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">TypeScript</span>
+                <span class="skill-item__level" data-level="1">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_basic">Básico</span>
+                </span>
+              </li>
+            </ul>
           </div>
 
           <div class="skills__category">
             <h3 class="skills__category-title reveal" data-i18n="skills_cat_backend">Backend</h3>
-            <div class="skills__grid">
-              <article class="skill-card reveal" data-percent="75">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">Node.js</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="50">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">MongoDB</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="70">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">MySQL</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="60">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">Java</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="30">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">Docker</p>
-              </article>
-            </div>
+            <ul class="skills__list">
+              <li class="skill-item reveal">
+                <span class="skill-item__name">Node.js</span>
+                <span class="skill-item__level" data-level="3">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_high">Avanzado</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">MongoDB</span>
+                <span class="skill-item__level" data-level="2">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_mid">Intermedio</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">MySQL</span>
+                <span class="skill-item__level" data-level="2">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_mid">Intermedio</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">Java</span>
+                <span class="skill-item__level" data-level="2">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_mid">Intermedio</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">Docker</span>
+                <span class="skill-item__level" data-level="1">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_basic">Básico</span>
+                </span>
+              </li>
+            </ul>
           </div>
 
           <div class="skills__category">
             <h3 class="skills__category-title reveal" data-i18n="skills_cat_tools">Herramientas</h3>
-            <div class="skills__grid">
-              <article class="skill-card reveal" data-percent="80">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">Git</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="60">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">Linux/Bash</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="40">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name">Postman</p>
-              </article>
-            </div>
+            <ul class="skills__list">
+              <li class="skill-item reveal">
+                <span class="skill-item__name">Git</span>
+                <span class="skill-item__level" data-level="3">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_high">Avanzado</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">Linux/Bash</span>
+                <span class="skill-item__level" data-level="2">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_mid">Intermedio</span>
+                </span>
+              </li>
+              <li class="skill-item reveal">
+                <span class="skill-item__name">Postman</span>
+                <span class="skill-item__level" data-level="1">
+                  <span class="skill-item__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span data-i18n="level_basic">Básico</span>
+                </span>
+              </li>
+            </ul>
           </div>
 
           <div class="skills__category">
-            <h3 class="skills__category-title reveal" data-i18n="skills_cat_other">Otras habilidades</h3>
-            <div class="skills__grid">
-              <article class="skill-card reveal" data-percent="80">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name" data-i18n="skill_teamwork">Trabajo en equipo</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="70">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name" data-i18n="skill_problem_solving">Resolución de problemas</p>
-              </article>
-
-              <article class="skill-card reveal" data-percent="70">
-                <div class="skill-donut">
-                  <svg viewBox="0 0 110 110" aria-hidden="true">
-                    <circle class="skill-donut__track" cx="55" cy="55" r="46"></circle>
-                    <circle class="skill-donut__progress" cx="55" cy="55" r="46"></circle>
-                  </svg>
-                  <span class="skill-donut__value">0%</span>
-                </div>
-                <p class="skill-card__name" data-i18n="skill_communication">Comunicación</p>
-              </article>
-            </div>
+            <h3 class="skills__category-title reveal" data-i18n="skills_cat_other">Habilidades blandas</h3>
+            <ul class="skills__chips">
+              <li class="skill-chip reveal" data-i18n="skill_teamwork">Trabajo en equipo</li>
+              <li class="skill-chip reveal" data-i18n="skill_leadership">Liderazgo</li>
+              <li class="skill-chip reveal" data-i18n="skill_proactive">Proactividad</li>
+              <li class="skill-chip reveal" data-i18n="skill_fast_learning">Aprendizaje rápido</li>
+              <li class="skill-chip reveal" data-i18n="skill_reasoning">Razonamiento</li>
+              <li class="skill-chip reveal" data-i18n="skill_patience">Paciencia</li>
+              <li class="skill-chip reveal" data-i18n="skill_devices">Dispositivos inteligentes</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -351,25 +296,32 @@
         <div class="timeline">
           <div class="timeline__item reveal">
             <span class="timeline__dot"></span>
-            <span class="timeline__period" data-i18n="edu_item1_period">2021 — Actualidad</span>
-            <h3 class="timeline__title">Perito en Informática</h3>
-            <p class="timeline__org">Fundación Kinal</p>
-            <p class="timeline__desc" data-i18n="edu_item1_desc">
-              Actualmente cursando 6to Perito. 3 años de formación en programación
-              como parte de la carrera, desarrollando proyectos que simulan entornos
-              de trabajo colaborativo y arquitecturas de software modernas.
-            </p>
+            <span class="timeline__period" data-i18n="edu_item2_period">2026</span>
+            <h3 class="timeline__title" data-i18n="edu_item2_title">Prácticas finales</h3>
+            <p class="timeline__org">Corporación Carrousel</p>
+            <ul class="timeline__list">
+              <li data-i18n="edu_carrousel_b1">Realicé el inventario y registro de equipos tecnológicos en 30 parques.</li>
+              <li data-i18n="edu_carrousel_b2">Elaboré plantillas y formularios para mejorar el control y la organización de información.</li>
+              <li data-i18n="edu_carrousel_b3">Participé en el desarrollo de aplicaciones para la reserva de vehículos y la gestión de campañas.</li>
+              <li data-i18n="edu_carrousel_b4">Creé un video tutorial para facilitar el uso de una aplicación.</li>
+              <li data-i18n="edu_carrousel_b5">Colaboré en la evaluación de sistemas y la implementación de infraestructura tecnológica.</li>
+            </ul>
           </div>
 
           <div class="timeline__item reveal">
-            <span class="timeline__dot timeline__dot--pending"></span>
-            <span class="timeline__period" data-i18n="edu_item2_period">Agosto 2026</span>
-            <h3 class="timeline__title" data-i18n="edu_item2_title">Prácticas profesionales</h3>
-            <p class="timeline__org">Carrusel</p>
-            <p class="timeline__desc" data-i18n="edu_item2_desc">
-              Prácticas planificadas como parte del proceso formativo de Perito en
-              Informática.
-            </p>
+            <span class="timeline__dot"></span>
+            <span class="timeline__period" data-i18n="edu_item1_period">2024 — 2026</span>
+            <h3 class="timeline__title">Perito en Informática</h3>
+            <p class="timeline__org">Colegio Técnico Laboral Kinal</p>
+            <p class="timeline__desc" data-i18n="edu_item1_desc">Carrera de nivel diversificado. 3 años de formación en programación, desarrollando proyectos que simulan entornos de trabajo colaborativo y arquitecturas de software modernas.</p>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <span class="timeline__period" data-i18n="edu_item3_period">2021 — 2023</span>
+            <h3 class="timeline__title" data-i18n="edu_item3_title">Ciclo básico</h3>
+            <p class="timeline__org">Colegio la Villa del Saber</p>
+            <p class="timeline__desc" data-i18n="edu_item3_desc">Educación básica completada antes de iniciar la carrera técnica.</p>
           </div>
         </div>
       </div>
@@ -384,26 +336,26 @@
           <article class="project-card reveal">
             <div class="project-card__image project-carousel" data-carousel>
               <div class="project-carousel__track">
-                <button class="project-carousel__slide" type="button" data-index="0">
-                  <img src="assets/img/projects/urbus/urbus-01.jpg" alt="Panel de administración de UrBus mostrando mapa en tiempo real" loading="lazy" data-i18n-attr="alt:project_urbus_alt" />
+                <button class="project-carousel__slide" type="button" data-index="0" data-project="UrBus" data-shot="1">
+                  <img src="assets/img/projects/urbus/urbus-01.jpg" alt="" data-i18n-attr="alt:project_urbus_alt" width="900" height="513" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="1">
-                  <img src="assets/img/projects/urbus/urbus-02.jpg" alt="Captura adicional de UrBus" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="1" data-project="UrBus" data-shot="2">
+                  <img src="assets/img/projects/urbus/urbus-02.jpg" alt="Captura 2 de UrBus" data-project="UrBus" data-shot="2" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="2">
-                  <img src="assets/img/projects/urbus/urbus-03.jpg" alt="Captura adicional de UrBus" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="2" data-project="UrBus" data-shot="3">
+                  <img src="assets/img/projects/urbus/urbus-03.jpg" alt="Captura 3 de UrBus" data-project="UrBus" data-shot="3" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="3">
-                  <img src="assets/img/projects/urbus/urbus-04.jpg" alt="Captura adicional de UrBus" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="3" data-project="UrBus" data-shot="4">
+                  <img src="assets/img/projects/urbus/urbus-04.jpg" alt="Captura 4 de UrBus" data-project="UrBus" data-shot="4" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="4">
-                  <img src="assets/img/projects/urbus/urbus-05.jpg" alt="Captura adicional de UrBus" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="4" data-project="UrBus" data-shot="5">
+                  <img src="assets/img/projects/urbus/urbus-05.jpg" alt="Captura 5 de UrBus" data-project="UrBus" data-shot="5" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="5">
-                  <img src="assets/img/projects/urbus/urbus-06.jpg" alt="Captura adicional de UrBus" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="5" data-project="UrBus" data-shot="6">
+                  <img src="assets/img/projects/urbus/urbus-06.jpg" alt="Captura 6 de UrBus" data-project="UrBus" data-shot="6" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="6">
-                  <img src="assets/img/projects/urbus/urbus-07.jpg" alt="Captura adicional de UrBus" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="6" data-project="UrBus" data-shot="7">
+                  <img src="assets/img/projects/urbus/urbus-07.jpg" alt="Captura 7 de UrBus" data-project="UrBus" data-shot="7" width="900" height="512" loading="lazy" />
                 </button>
               </div>
               <button class="project-carousel__arrow project-carousel__arrow--prev" type="button" data-i18n-attr="aria-label:carousel_prev" aria-label="Foto anterior">
@@ -413,101 +365,96 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
               </button>
               <div class="project-carousel__dots">
-                <button class="project-carousel__dot is-active" type="button" data-index="0" aria-label="Ir a la foto 1"></button>
-                <button class="project-carousel__dot" type="button" data-index="1" aria-label="Ir a la foto 2"></button>
-                <button class="project-carousel__dot" type="button" data-index="2" aria-label="Ir a la foto 3"></button>
-                <button class="project-carousel__dot" type="button" data-index="3" aria-label="Ir a la foto 4"></button>
-                <button class="project-carousel__dot" type="button" data-index="4" aria-label="Ir a la foto 5"></button>
-                <button class="project-carousel__dot" type="button" data-index="5" aria-label="Ir a la foto 6"></button>
-                <button class="project-carousel__dot" type="button" data-index="6" aria-label="Ir a la foto 7"></button>
+                <button class="project-carousel__dot is-active" type="button" data-index="0"></button>
+                <button class="project-carousel__dot" type="button" data-index="1"></button>
+                <button class="project-carousel__dot" type="button" data-index="2"></button>
+                <button class="project-carousel__dot" type="button" data-index="3"></button>
+                <button class="project-carousel__dot" type="button" data-index="4"></button>
+                <button class="project-carousel__dot" type="button" data-index="5"></button>
+                <button class="project-carousel__dot" type="button" data-index="6"></button>
               </div>
             </div>
             <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type" data-i18n="project_type_school">Proyecto académico</span>
+                <span class="project-card__role"><span data-i18n="project_role_label">Rol:</span> <span data-i18n="role_scrum">Scrum Master</span></span>
+              </div>
               <h3 class="project-card__title">UrBus</h3>
-              <p class="project-card__desc" data-i18n="project_urbus_desc">
-                Proyecto desarrollado en equipo: plataforma de desarrollo colaborativo
-                orientada a la integración de estudiantes en equipos de trabajo
-                organizados por "buses". Simula un entorno profesional donde múltiples
-                grupos trabajan sobre distintos módulos dentro de una arquitectura
-                basada en microservicios, con mapa en tiempo real para seguimiento de
-                rutas.
-              </p>
+              <p class="project-card__desc" data-i18n="project_urbus_desc">Proyecto escolar que continuó como proyecto en grupo. Ayuda a los estudiantes que no encuentran su bus o que se enteran tarde de un cambio de ruta, con un apartado de ubicación en tiempo real (actualmente en desarrollo).</p>
               <div class="project-card__tags">
                 <span class="tag">Node.js</span>
-                <span class="tag">ASP.NET Core</span>
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">MongoDB</span>
-                <span class="tag">Docker</span>
                 <span class="tag">Socket.IO</span>
+                <span class="tag">Docker</span>
+                <span class="tag">React</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">MapLibre GL</span>
               </div>
               <div class="project-card__footer">
-                <a class="project-card__link" href="https://github.com/Faze-Code-IN6AV/UrBus" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path>
-                  </svg>
+                <a class="project-card__link" href="https://github.com/chaoticfriedricee/UrBus" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
                   <span data-i18n="project_link">Ver repositorio</span>
                 </a>
               </div>
             </div>
           </article>
-
           <article class="project-card reveal">
             <div class="project-card__image project-carousel" data-carousel>
               <div class="project-carousel__track">
-                <button class="project-carousel__slide" type="button" data-index="0">
-                  <img src="assets/img/projects/paysmart/paysmart-01.jpg" alt="Panel de administración de PaySmart con estadísticas de cuentas" loading="lazy" data-i18n-attr="alt:project_paysmart_alt" />
+                <button class="project-carousel__slide" type="button" data-index="0" data-project="PaySmart" data-shot="1">
+                  <img src="assets/img/projects/paysmart/paysmart-01.jpg" alt="" data-i18n-attr="alt:project_paysmart_alt" width="900" height="463" loading="lazy" />
                 </button>
               </div>
             </div>
             <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type" data-i18n="project_type_school">Proyecto académico</span>
+                <span class="project-card__role"><span data-i18n="project_role_label">Rol:</span> <span data-i18n="role_dev">Programador</span></span>
+              </div>
               <h3 class="project-card__title">PaySmart</h3>
-              <p class="project-card__desc" data-i18n="project_paysmart_desc">
-                Proyecto desarrollado en equipo: sistema de pagos basado en
-                arquitectura de microservicios, desarrollado como aplicación móvil
-                con panel de administración para gestión de cuentas, transacciones y
-                reportes de movimientos.
-              </p>
+              <p class="project-card__desc" data-i18n="project_paysmart_desc">Sistema gestor de banca en línea que simula operaciones bancarias: cuentas, transacciones y cambio de monedas, enfocado en cumplir lo solicitado en la tarea.</p>
               <div class="project-card__tags">
+                <span class="tag">ASP.NET Core</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React</span>
                 <span class="tag">React Native</span>
                 <span class="tag">Expo</span>
-                <span class="tag">Zustand</span>
-                <span class="tag">React Hook Form</span>
-                <span class="tag">Axios</span>
+                <span class="tag">Docker</span>
               </div>
               <div class="project-card__footer">
                 <a class="project-card__link" href="https://github.com/Faze-Code-IN6AV/PaySmart" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path>
-                  </svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
                   <span data-i18n="project_link">Ver repositorio</span>
                 </a>
               </div>
             </div>
           </article>
-
           <article class="project-card reveal">
             <div class="project-card__image project-carousel" data-carousel>
               <div class="project-carousel__track">
-                <button class="project-carousel__slide" type="button" data-index="0">
-                  <img src="assets/img/projects/foodline/foodline-01.jpeg" alt="Panel de administración de FoodLine mostrando menú de restaurante" loading="lazy" data-i18n-attr="alt:project_foodline_alt" />
+                <button class="project-carousel__slide" type="button" data-index="0" data-project="FoodLine" data-shot="1">
+                  <img src="assets/img/projects/foodline/foodline-01.jpeg" alt="" data-i18n-attr="alt:project_foodline_alt" width="900" height="506" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="1">
-                  <img src="assets/img/projects/foodline/foodline-02.jpg" alt="Captura adicional de FoodLine" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="1" data-project="FoodLine" data-shot="2">
+                  <img src="assets/img/projects/foodline/foodline-02.jpg" alt="Captura 2 de FoodLine" data-project="FoodLine" data-shot="2" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="2">
-                  <img src="assets/img/projects/foodline/foodline-03.jpg" alt="Captura adicional de FoodLine" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="2" data-project="FoodLine" data-shot="3">
+                  <img src="assets/img/projects/foodline/foodline-03.jpg" alt="Captura 3 de FoodLine" data-project="FoodLine" data-shot="3" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="3">
-                  <img src="assets/img/projects/foodline/foodline-04.jpg" alt="Captura adicional de FoodLine" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="3" data-project="FoodLine" data-shot="4">
+                  <img src="assets/img/projects/foodline/foodline-04.jpg" alt="Captura 4 de FoodLine" data-project="FoodLine" data-shot="4" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="4">
-                  <img src="assets/img/projects/foodline/foodline-05.jpg" alt="Captura adicional de FoodLine" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="4" data-project="FoodLine" data-shot="5">
+                  <img src="assets/img/projects/foodline/foodline-05.jpg" alt="Captura 5 de FoodLine" data-project="FoodLine" data-shot="5" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="5">
-                  <img src="assets/img/projects/foodline/foodline-06.jpg" alt="Captura adicional de FoodLine" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="5" data-project="FoodLine" data-shot="6">
+                  <img src="assets/img/projects/foodline/foodline-06.jpg" alt="Captura 6 de FoodLine" data-project="FoodLine" data-shot="6" width="900" height="512" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="6">
-                  <img src="assets/img/projects/foodline/foodline-07.jpg" alt="Captura adicional de FoodLine" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="6" data-project="FoodLine" data-shot="7">
+                  <img src="assets/img/projects/foodline/foodline-07.jpg" alt="Captura 7 de FoodLine" data-project="FoodLine" data-shot="7" width="900" height="512" loading="lazy" />
                 </button>
               </div>
               <button class="project-carousel__arrow project-carousel__arrow--prev" type="button" data-i18n-attr="aria-label:carousel_prev" aria-label="Foto anterior">
@@ -517,55 +464,54 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
               </button>
               <div class="project-carousel__dots">
-                <button class="project-carousel__dot is-active" type="button" data-index="0" aria-label="Ir a la foto 1"></button>
-                <button class="project-carousel__dot" type="button" data-index="1" aria-label="Ir a la foto 2"></button>
-                <button class="project-carousel__dot" type="button" data-index="2" aria-label="Ir a la foto 3"></button>
-                <button class="project-carousel__dot" type="button" data-index="3" aria-label="Ir a la foto 4"></button>
-                <button class="project-carousel__dot" type="button" data-index="4" aria-label="Ir a la foto 5"></button>
-                <button class="project-carousel__dot" type="button" data-index="5" aria-label="Ir a la foto 6"></button>
-                <button class="project-carousel__dot" type="button" data-index="6" aria-label="Ir a la foto 7"></button>
+                <button class="project-carousel__dot is-active" type="button" data-index="0"></button>
+                <button class="project-carousel__dot" type="button" data-index="1"></button>
+                <button class="project-carousel__dot" type="button" data-index="2"></button>
+                <button class="project-carousel__dot" type="button" data-index="3"></button>
+                <button class="project-carousel__dot" type="button" data-index="4"></button>
+                <button class="project-carousel__dot" type="button" data-index="5"></button>
+                <button class="project-carousel__dot" type="button" data-index="6"></button>
               </div>
             </div>
             <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type" data-i18n="project_type_school">Proyecto académico</span>
+                <span class="project-card__role"><span data-i18n="project_role_label">Rol:</span> <span data-i18n="role_dev_backend">Programador y backend</span></span>
+              </div>
               <h3 class="project-card__title">FoodLine</h3>
-              <p class="project-card__desc" data-i18n="project_foodline_desc">
-                Proyecto desarrollado en equipo: sistema de gestión de restaurantes
-                con panel de administración para manejar menú, órdenes, reservaciones
-                y eventos, con una interfaz moderna orientada a la experiencia del
-                usuario.
-              </p>
+              <p class="project-card__desc" data-i18n="project_foodline_desc">Sistema gestor de restaurantes: una página de restaurante con menús, locales, reservaciones, eventos y reseñas.</p>
               <div class="project-card__tags">
-                <span class="tag">React 19</span>
-                <span class="tag">Vite</span>
+                <span class="tag">ASP.NET Core</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React</span>
+                <span class="tag">React Native</span>
                 <span class="tag">Tailwind CSS</span>
-                <span class="tag">Zustand</span>
-                <span class="tag">Framer Motion</span>
+                <span class="tag">Docker</span>
               </div>
               <div class="project-card__footer">
                 <a class="project-card__link" href="https://github.com/Faze-Code-IN6AV/FoodLine" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path>
-                  </svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
                   <span data-i18n="project_link">Ver repositorio</span>
                 </a>
               </div>
             </div>
           </article>
-
           <article class="project-card reveal">
             <div class="project-card__image project-carousel" data-carousel>
               <div class="project-carousel__track">
-                <button class="project-carousel__slide" type="button" data-index="0">
-                  <img src="assets/img/projects/luma/luma-01.jpg" alt="Panel de resumen de Luma mostrando estadísticas de tareas" loading="lazy" data-i18n-attr="alt:project_luma_alt" />
+                <button class="project-carousel__slide" type="button" data-index="0" data-project="Luma" data-shot="1">
+                  <img src="assets/img/projects/luma/luma-01.jpg" alt="" data-i18n-attr="alt:project_luma_alt" width="1280" height="720" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="1">
-                  <img src="assets/img/projects/luma/luma-02.jpg" alt="Captura adicional de Luma" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="1" data-project="Luma" data-shot="2">
+                  <img src="assets/img/projects/luma/luma-02.jpg" alt="Captura 2 de Luma" data-project="Luma" data-shot="2" width="900" height="506" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="2">
-                  <img src="assets/img/projects/luma/luma-03.jpg" alt="Captura adicional de Luma" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="2" data-project="Luma" data-shot="3">
+                  <img src="assets/img/projects/luma/luma-03.jpg" alt="Captura 3 de Luma" data-project="Luma" data-shot="3" width="900" height="506" loading="lazy" />
                 </button>
-                <button class="project-carousel__slide" type="button" data-index="3">
-                  <img src="assets/img/projects/luma/luma-04.jpg" alt="Captura adicional de Luma" loading="lazy" />
+                <button class="project-carousel__slide" type="button" data-index="3" data-project="Luma" data-shot="4">
+                  <img src="assets/img/projects/luma/luma-04.jpg" alt="Captura 4 de Luma" data-project="Luma" data-shot="4" width="900" height="506" loading="lazy" />
                 </button>
               </div>
               <button class="project-carousel__arrow project-carousel__arrow--prev" type="button" data-i18n-attr="aria-label:carousel_prev" aria-label="Foto anterior">
@@ -575,35 +521,156 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
               </button>
               <div class="project-carousel__dots">
-                <button class="project-carousel__dot is-active" type="button" data-index="0" aria-label="Ir a la foto 1"></button>
-                <button class="project-carousel__dot" type="button" data-index="1" aria-label="Ir a la foto 2"></button>
-                <button class="project-carousel__dot" type="button" data-index="2" aria-label="Ir a la foto 3"></button>
-                <button class="project-carousel__dot" type="button" data-index="3" aria-label="Ir a la foto 4"></button>
+                <button class="project-carousel__dot is-active" type="button" data-index="0"></button>
+                <button class="project-carousel__dot" type="button" data-index="1"></button>
+                <button class="project-carousel__dot" type="button" data-index="2"></button>
+                <button class="project-carousel__dot" type="button" data-index="3"></button>
               </div>
             </div>
             <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type" data-i18n="project_type_school">Proyecto académico</span>
+                <span class="project-card__role"><span data-i18n="project_role_label">Rol:</span> <span data-i18n="role_backend">Programador backend</span></span>
+              </div>
               <h3 class="project-card__title">Luma</h3>
-              <p class="project-card__desc" data-i18n="project_luma_desc">
-                Proyecto desarrollado en equipo durante un taller de 270 minutos:
-                sistema gestor de tareas con panel de resumen, distribución por
-                prioridad, seguimiento de cumplimiento y control de tareas
-                pendientes y vencidas.
-              </p>
+              <p class="project-card__desc" data-i18n="project_luma_desc">Sistema gestor de tareas desarrollado en un solo día con apoyo de IA. Incluye tareas, nivel de urgencia, descripción, fechas y dashboard.</p>
               <div class="project-card__tags">
                 <span class="tag">Node.js</span>
                 <span class="tag">Express</span>
                 <span class="tag">MongoDB</span>
                 <span class="tag">Mongoose</span>
                 <span class="tag">JWT</span>
-                <span class="tag">React 18</span>
+                <span class="tag">React</span>
                 <span class="tag">Vite</span>
-                <span class="tag">Axios</span>
+                <span class="tag">Swagger</span>
               </div>
               <div class="project-card__footer">
                 <a class="project-card__link" href="https://github.com/rmarroquin-2024231/sistemaGestionDeTareas" target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path>
-                  </svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
+                  <span data-i18n="project_link">Ver repositorio</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__image project-carousel" data-carousel>
+              <div class="project-carousel__track">
+                <button class="project-carousel__slide" type="button" data-index="0" data-project="Helpdesk" data-shot="1">
+                  <img src="assets/img/projects/helpdesk/helpdesk-01.jpg" alt="" data-i18n-attr="alt:project_helpdesk_alt" width="900" height="688" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="1" data-project="Helpdesk" data-shot="2">
+                  <img src="assets/img/projects/helpdesk/helpdesk-02.jpg" alt="Captura 2 de Helpdesk" width="900" height="580" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="2" data-project="Helpdesk" data-shot="3">
+                  <img src="assets/img/projects/helpdesk/helpdesk-03.jpg" alt="Captura 3 de Helpdesk" width="900" height="575" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="3" data-project="Helpdesk" data-shot="4">
+                  <img src="assets/img/projects/helpdesk/helpdesk-04.jpg" alt="Captura 4 de Helpdesk" width="900" height="1093" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="4" data-project="Helpdesk" data-shot="5">
+                  <img src="assets/img/projects/helpdesk/helpdesk-05.jpg" alt="Captura 5 de Helpdesk" width="900" height="1287" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="5" data-project="Helpdesk" data-shot="6">
+                  <img src="assets/img/projects/helpdesk/helpdesk-06.jpg" alt="Captura 6 de Helpdesk" width="900" height="562" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="6" data-project="Helpdesk" data-shot="7">
+                  <img src="assets/img/projects/helpdesk/helpdesk-07.jpg" alt="Captura 7 de Helpdesk" width="900" height="1538" loading="lazy" />
+                </button>
+              </div>
+              <button class="project-carousel__arrow project-carousel__arrow--prev" type="button" data-i18n-attr="aria-label:carousel_prev" aria-label="Foto anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button class="project-carousel__arrow project-carousel__arrow--next" type="button" data-i18n-attr="aria-label:carousel_next" aria-label="Foto siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+              <div class="project-carousel__dots">
+                <button class="project-carousel__dot is-active" type="button" data-index="0"></button>
+                <button class="project-carousel__dot" type="button" data-index="1"></button>
+                <button class="project-carousel__dot" type="button" data-index="2"></button>
+                <button class="project-carousel__dot" type="button" data-index="3"></button>
+                <button class="project-carousel__dot" type="button" data-index="4"></button>
+                <button class="project-carousel__dot" type="button" data-index="5"></button>
+                <button class="project-carousel__dot" type="button" data-index="6"></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type" data-i18n="project_type_internship">Proyecto de prácticas</span>
+                <span class="project-card__role"><span data-i18n="project_role_label">Rol:</span> <span data-i18n="role_dev">Programador</span></span>
+              </div>
+              <h3 class="project-card__title">Helpdesk</h3>
+              <p class="project-card__desc" data-i18n="project_helpdesk_desc">Aplicación para resolver el control de fechas de los vehículos de la empresa: registra el estado del vehículo antes del uso y en la devolución, tiene un apartado de mantenimiento con kilometraje para sus servicios y un calendario con el uso planificado. Desarrollada con asistencia de IA (Claude Code).</p>
+              <div class="project-card__tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Blade</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Claude Code</span>
+              </div>
+              <div class="project-card__footer">
+                <a class="project-card__link" href="https://github.com/dlomito-002/vehicle-app" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
+                  <span data-i18n="project_link">Ver repositorio</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__image project-carousel" data-carousel>
+              <div class="project-carousel__track">
+                <button class="project-carousel__slide" type="button" data-index="0" data-project="Carrousel cumpleaños" data-shot="1">
+                  <img src="assets/img/projects/carrousel/carrousel-01.jpg" alt="" data-i18n-attr="alt:project_carrousel_alt" width="900" height="514" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="1" data-project="Carrousel cumpleaños" data-shot="2">
+                  <img src="assets/img/projects/carrousel/carrousel-02.jpg" alt="Captura 2 de Carrousel cumpleaños" width="900" height="514" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="2" data-project="Carrousel cumpleaños" data-shot="3">
+                  <img src="assets/img/projects/carrousel/carrousel-03.jpg" alt="Captura 3 de Carrousel cumpleaños" width="900" height="514" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="3" data-project="Carrousel cumpleaños" data-shot="4">
+                  <img src="assets/img/projects/carrousel/carrousel-04.jpg" alt="Captura 4 de Carrousel cumpleaños" width="900" height="514" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="4" data-project="Carrousel cumpleaños" data-shot="5">
+                  <img src="assets/img/projects/carrousel/carrousel-05.jpg" alt="Captura 5 de Carrousel cumpleaños" width="900" height="514" loading="lazy" />
+                </button>
+                <button class="project-carousel__slide" type="button" data-index="5" data-project="Carrousel cumpleaños" data-shot="6">
+                  <img src="assets/img/projects/carrousel/carrousel-06.jpg" alt="Captura 6 de Carrousel cumpleaños" width="900" height="514" loading="lazy" />
+                </button>
+              </div>
+              <button class="project-carousel__arrow project-carousel__arrow--prev" type="button" data-i18n-attr="aria-label:carousel_prev" aria-label="Foto anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button class="project-carousel__arrow project-carousel__arrow--next" type="button" data-i18n-attr="aria-label:carousel_next" aria-label="Foto siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+              <div class="project-carousel__dots">
+                <button class="project-carousel__dot is-active" type="button" data-index="0"></button>
+                <button class="project-carousel__dot" type="button" data-index="1"></button>
+                <button class="project-carousel__dot" type="button" data-index="2"></button>
+                <button class="project-carousel__dot" type="button" data-index="3"></button>
+                <button class="project-carousel__dot" type="button" data-index="4"></button>
+                <button class="project-carousel__dot" type="button" data-index="5"></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type" data-i18n="project_type_internship">Proyecto de prácticas</span>
+                <span class="project-card__role"><span data-i18n="project_role_label">Rol:</span> <span data-i18n="role_dev">Programador</span></span>
+              </div>
+              <h3 class="project-card__title">Carrousel cumpleaños</h3>
+              <p class="project-card__desc" data-i18n="project_carrousel_desc">Aplicación web que genera una base de datos de clientes y permite crear campañas que envían correos electrónicos a esa base. Incluye una base de cupones que se generan y se editan desde la misma app. Desarrollada con asistencia de IA (Claude Code).</p>
+              <div class="project-card__tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MariaDB</span>
+                <span class="tag">PHPMailer</span>
+                <span class="tag">Google Apps Script</span>
+                <span class="tag">Apache</span>
+                <span class="tag">Claude Code</span>
+              </div>
+              <div class="project-card__footer">
+                <a class="project-card__link" href="https://github.com/FernandoZL/carrousel-cumple" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
                   <span data-i18n="project_link">Ver repositorio</span>
                 </a>
               </div>
@@ -653,6 +720,16 @@
               </span>
             </a>
 
+            <a class="contact__link" href="https://github.com/dlomito-002" target="_blank" rel="noopener noreferrer">
+              <span class="contact__link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
+              </span>
+              <span>
+                <span class="contact__link-label">GitHub</span><br />
+                <span class="contact__link-value">dlomito-002</span>
+              </span>
+            </a>
+
             <a class="contact__link" href="https://www.linkedin.com/in/diego-vel%C3%A1squez-943224422/" target="_blank" rel="noopener noreferrer">
               <span class="contact__link-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -679,7 +756,7 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-attr="aria-label:lightbox_label" aria-label="Visor de imágenes" aria-hidden="true">
     <button class="lightbox__close" id="lightboxClose" type="button" data-i18n-attr="aria-label:lightbox_close" aria-label="Cerrar">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
     </button>
@@ -699,7 +776,6 @@
   <script src="js/i18n.js" defer></script>
   <script src="js/navigation.js" defer></script>
   <script src="js/scrollReveal.js" defer></script>
-  <script src="js/skillsChart.js" defer></script>
   <script src="js/projectCarousel.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
